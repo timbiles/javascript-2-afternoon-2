@@ -127,19 +127,18 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the Array being the odds array (all the odd values from numbersArray).
 */
 
-var evenArr = [];
-var oddArr = [];
+var evenAndOdd = [[],[]];
 
 
-var divider = function(numbersArray){
-  for(i=0; i <numbersArray.length; i++){
+function divider(numbersArray){
+  for(let i=0; i <numbersArray.length; i++){
     if(numbersArray[i] % 2 === 0) {
-      evenArr.push(numbersArray[i])
+      evenAndOdd[0].push(numbersArray[i])
     } else {
-      oddArr.push(numbersArray[i]);
+      evenAndOdd[1].push(numbersArray[i]);
     }
   }
-  return numbersArray;
+  return evenAndOdd;
 }
 
 
@@ -161,7 +160,11 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
+// function finder(arr){
+
+//   for (leti=0; i<arr.length; i++);
+//     if()
+// }
 
 
 
